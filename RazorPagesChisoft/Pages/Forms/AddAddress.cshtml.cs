@@ -23,7 +23,7 @@ namespace RazorPagesChisoft.Pages.Forms
             {
                 return Page();
             }
-            return RedirectToPage("/Index", new {Address.City});
+            return RedirectToPage("/Index", new {Address.City, Address.State });
         }
     }
 }

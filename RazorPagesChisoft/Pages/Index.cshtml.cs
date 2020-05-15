@@ -19,11 +19,20 @@ namespace RazorPagesChisoft.Pages
 
         [BindProperty(SupportsGet = true)]
         public string City { get; set; }
+
+        [BindProperty(SupportsGet =true)]
+        public string State { get; set; }
         public void OnGet()
         {
             if(string.IsNullOrWhiteSpace(City))
             {
                 City = "The Web.";
+                
+            }
+
+            if(string.IsNullOrWhiteSpace(State))
+            {
+                State = "ASP.NET RazorPages";
             }
         }
     }
